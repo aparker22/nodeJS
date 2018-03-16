@@ -2,10 +2,13 @@
 // returns the sum of the numbers.
 
 var sumNumbers = function (numbers) {
-    var sum = 0;
-    for (var i = 0; i < numbers.length; i++) {
-        sum += numbers[i];
-    }
+    var sum = numbers.reduce(function(a,b) {
+        return a+b;
+    });
+//     var sum = 0;
+//     for (var i = 0; i < numbers.length; i++) {
+//         sum += numbers[i];
+//     }
 return sum;
 };
 
